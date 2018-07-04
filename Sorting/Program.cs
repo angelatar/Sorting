@@ -49,12 +49,7 @@ namespace Sorting
             {
                 switch (num[i])
                 {
-                    case "1": changedArr = InsertionSort.Sort(arr); Print(changedArr); Console.WriteLine("Memory = " + InsertionSort.MemoryAllocation() + " byte"); break;
-                    case "2": changedArr = BubbleSort.Sort(arr); Print(changedArr); Console.WriteLine("Memory = " + BubbleSort.MemoryAllocation() + " byte"); break;
-                    case "3": changedArr = QuickSort.Sort(arr); Print(changedArr); Console.WriteLine("Memory = " + QuickSort.MemoryAllocation() + " byte"); break;
-                    case "4": changedArr = HeapSort.Sort(arr); Print(changedArr); Console.WriteLine("Memory = " + HeapSort.MemoryAllocation() + " byte"); break;
-                    case "5": changedArr = MergeSort.Sort(arr); Print(changedArr); Console.WriteLine("Memory = " + MergeSort.MemoryAllocation() + " byte"); break;
-                    case "6":
+                    
                         DateTime inT1 = DateTime.Now;
                         changedArr = InsertionSort.Sort(arr); Print(changedArr);
                         DateTime inT2 = DateTime.Now;  delta[0] = inT2 - inT1;
